@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Blog preview card</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    .container{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: hsl(47, 88%, 63%);
+      width: 100%;
+    }
+    .card {
+      display: flex;
+      flex-direction: column;
+      background-color: hsl(0, 0%, 100%);
+      border-radius: 10px;
+      box-shadow: 10px 10px 0px hsl(0, 0%, 7%);
+      overflow: hidden;
+      border: 2px solid hsl(0, 0%, 7%);
+    }
+    .card .header img {
+      border-radius: 10px;
+      width: 330px;
+      margin: 20px;
+    }
+    .card .nav{
+      margin: 0px 20px 0px 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      justify-self: start;
+    }
+    .card .nav button {
+      background-color: hsl(47, 88%, 63%);
+      color: hsl(0, 0%, 7%);
+      border: none;
+      border-radius: 5px;
+      padding: 5px 10px;
+      margin: 5px;
+      cursor: pointer;
+    }
+    .card .nav p {
+      color: hsl(0, 0%, 7%);
+      margin-top: 5px;
+      font-size: 16px;
+      font-weight: 500;
+    }
+    .card .main {
+      margin: 20px;
+      width: 330px;
+      display: flex;
+      flex-direction: column;
+    }
+    .card .main h1 {
+      color: hsl(0, 0%, 7%);
+      font-size: 1.5rem;
+      font-weight: 800;
+      margin-bottom: 10px;
+    }
+    .card .main h1:hover {
+      color: hsl(47, 88%, 63%);
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+    }
+    .card .main p {
+      color: hsl(0, 0%, 42%);
+      font-size: 16px;
+      font-weight: 500;
+    }
+    .card .footer {
+      display: flex;
+      align-items: center;
+      margin: 0px 20px 20px 20px;
+    }
+    .card .footer img {
+      border-radius: 50%;
+      width: 30px;
+      margin-right: 10px;
+    }
+    .card .footer div {
+      display: flex;
+      flex-direction: column;
+    }
+    .card .footer p {
+      color: hsl(0, 0%, 7%);
+      font-size: 16px;
+      font-weight: 800;
+    }
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <div role="banner" class="header"><img src="./assets/images/illustration-article.svg" alt="Header"></div>
+      <div role="navigation" class="nav">
+        <button>Learning</button>
+        <p>Published 21 Dec 2023</p>
+      </div>
+      <div role="main" class="main">
+        <h1>HTML & CSS foundations</h1>
+        <p>These languages are the backbone of every website, defining structure, content, and presentation.</p>
+      </div>
+      <div role="contentinfo" class="footer">
+        <img src="./assets/images/image-avatar.webp" alt="avatar">
+        <div>
+          <p>Greg Hooper</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Lưu Khang Huy</a>.
+  </div>
+</body>
+</html>
